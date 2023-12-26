@@ -1,6 +1,7 @@
 @use 'stars.scss';
 
-$background-content: #00000050;
+/* $background-content: #00000050; */
+$background-content: none;
 
 * {
     box-sizing:border-box;
@@ -33,10 +34,16 @@ header {
    justify-content: space-between;
    background-color: $background-content;
    gap: 50px;
+   flex-basis: 50%;
 }
 
 nav {
     color:#fff;
+}
+
+nav ul {
+    list-style:none;
+    padding:0;
 }
 
 .social {
@@ -44,10 +51,12 @@ nav {
     display:flex;
     gap: 20px;
 }
+
 .socialIcon {
-    font-size:40px;
+    font-size:30px;
     color: #ffffff70;
 }
+
 .socialIcon:hover {
     color: #ffffff;
     cursor: pointer;
