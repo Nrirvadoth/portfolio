@@ -21,7 +21,6 @@ function StarFall() {
       <div class="star"></div>
       <div class="star"></div>
       <div class="star"></div>
-      <div class="star"></div>
     </div>
   );
 }
