@@ -5,9 +5,9 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 function Header() {
   return (
       <header>
-        <div class="title">
-          <h1>Mathurin Malandain</h1>
-          <h2>Développeur web</h2>
+        <div>
+          <h1 className="name">Mathurin Malandain</h1>
+          <h2 className="role">Développeur web</h2>
         </div>
         <nav>
           <ul>
