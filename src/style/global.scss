@@ -65,4 +65,17 @@ nav ul {
 main {
     width: 100%;
     background-color: $background-content;
+    overflow: auto;
+    color: #fff;
 }
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+::-webkit-scrollbar-track-piece {
+    background:#0c0d13;
+}
+::-webkit-scrollbar-thumb {
+    background: #61DAFB;
+}
+
