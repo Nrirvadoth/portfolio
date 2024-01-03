@@ -11,9 +11,10 @@ function Header() {
         </div>
         <nav>
           <ul>
-            <li>A propos</li>
-            <li>Compétences</li>
-            <li>Projets</li>
+            <li><a href="#about">A propos</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
         <div class="social">

@@ -8,6 +8,7 @@ $background-content: none;
 * {
   box-sizing: border-box;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -45,10 +46,10 @@ p {
 .container {
   width: 1280px;
   max-width: 90%;
-  height: calc(100vh - 240px);
+  height: 100vh;
   display: flex;
   flex-direction: row;
-  margin: 120px auto;
+  margin: 0 auto;
   gap: 100px;
 }
 
@@ -60,12 +61,17 @@ main {
   padding-right:20px;
 }
 
-::-webkit-scrollbar {
-  width: 3px;
+.content h2 {
+  padding-top: 120px;
 }
-::-webkit-scrollbar-track-piece {
-  background: #0c0d13;
+.content {
+  padding-bottom: 120px;
 }
-::-webkit-scrollbar-thumb {
-  background: #61dafb;
+
+::-webkit-scrollbar, ::-webkit-scrollbar-track-piece, ::-webkit-scrollbar-thumb {
+  display:none;
+}
+
+.fade {
+  mask-image: linear-gradient(180deg, transparent 5%, rgba(0, 0, 0, 1) 15%, rgba(0, 0, 0, 1) 85%, transparent 95%);
 }

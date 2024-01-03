@@ -4,6 +4,7 @@ header {
   justify-content: space-between;
   gap: 50px;
   flex-basis: 50%;
+  margin: 120px 0 240px;
 }
 
 nav {
@@ -36,6 +37,11 @@ nav ul li:before {
   left: -50px;
   top: 50%;
   position: absolute;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .social {
