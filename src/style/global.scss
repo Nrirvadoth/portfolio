@@ -61,11 +61,13 @@ main {
   padding-right:20px;
 }
 
-.content h2 {
+section {
   padding-top: 120px;
 }
+
 .content {
   padding-bottom: 120px;
+  scrollbar-width: none;
 }
 
 ::-webkit-scrollbar, ::-webkit-scrollbar-track-piece, ::-webkit-scrollbar-thumb {
