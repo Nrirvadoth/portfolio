@@ -5,7 +5,7 @@ function Home() {
     <div className="container">
       <Header />
       <main class="content fade">
-        <div class="" id="about">
+        <section id="about">
           <h2>Content</h2>
           <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus metus eros, at eleifend felis vulputate sit amet. Etiam sed quam urna. Sed venenatis, risus quis rhoncus lacinia, turpis elit condimentum est, sit amet cursus est nulla a lectus. Praesent aliquet tincidunt erat, at tempor lectus tempus a. Etiam scelerisque eros a ex suscipit laoreet. Sed et sollicitudin velit, quis dignissim nunc. Sed sed aliquam urna. Etiam vel ultrices felis. Ut egestas ipsum sit amet interdum sagittis. Nullam mattis aliquet urna, quis ultricies felis sodales non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed feugiat ut nunc at sollicitudin. Ut felis ex, scelerisque non porttitor at, dapibus eu elit. Mauris ornare eget nibh nec dignissim.
@@ -18,8 +18,8 @@ function Home() {
 
           In interdum mauris nibh, eget tempor turpis auctor auctor. Nunc mollis hendrerit porta. Pellentesque sed nunc eget ante mollis vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum nulla venenatis, rhoncus mi vitae, mollis justo. Maecenas imperdiet, metus nec mollis viverra, nulla turpis scelerisque ex, sed pharetra arcu elit ut erat. Pellentesque ullamcorper maximus lorem quis sagittis. Cras in mi et neque tincidunt mattis. Proin commodo urna ac ex mattis viverra. Aliquam vel finibus eros, in sodales nisl. Cras vitae pharetra ex. Suspendisse eget malesuada erat. Proin tempus nulla id mauris ornare consequat. Curabitur feugiat velit risus, nec ullamcorper elit eleifend et. Proin at orci dolor.
           </p>
-        </div>
-        <div class="" id="skills">
+        </section>
+        <section id="skills">
           <h2>Content</h2>
           <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus metus eros, at eleifend felis vulputate sit amet. Etiam sed quam urna. Sed venenatis, risus quis rhoncus lacinia, turpis elit condimentum est, sit amet cursus est nulla a lectus. Praesent aliquet tincidunt erat, at tempor lectus tempus a. Etiam scelerisque eros a ex suscipit laoreet. Sed et sollicitudin velit, quis dignissim nunc. Sed sed aliquam urna. Etiam vel ultrices felis. Ut egestas ipsum sit amet interdum sagittis. Nullam mattis aliquet urna, quis ultricies felis sodales non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed feugiat ut nunc at sollicitudin. Ut felis ex, scelerisque non porttitor at, dapibus eu elit. Mauris ornare eget nibh nec dignissim.
@@ -32,8 +32,8 @@ function Home() {
 
           In interdum mauris nibh, eget tempor turpis auctor auctor. Nunc mollis hendrerit porta. Pellentesque sed nunc eget ante mollis vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum nulla venenatis, rhoncus mi vitae, mollis justo. Maecenas imperdiet, metus nec mollis viverra, nulla turpis scelerisque ex, sed pharetra arcu elit ut erat. Pellentesque ullamcorper maximus lorem quis sagittis. Cras in mi et neque tincidunt mattis. Proin commodo urna ac ex mattis viverra. Aliquam vel finibus eros, in sodales nisl. Cras vitae pharetra ex. Suspendisse eget malesuada erat. Proin tempus nulla id mauris ornare consequat. Curabitur feugiat velit risus, nec ullamcorper elit eleifend et. Proin at orci dolor.
           </p>
-        </div>
-        <div class="" id="projects">
+        </section>
+        <section id="projects">
           <h2>Content</h2>
           <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus metus eros, at eleifend felis vulputate sit amet. Etiam sed quam urna. Sed venenatis, risus quis rhoncus lacinia, turpis elit condimentum est, sit amet cursus est nulla a lectus. Praesent aliquet tincidunt erat, at tempor lectus tempus a. Etiam scelerisque eros a ex suscipit laoreet. Sed et sollicitudin velit, quis dignissim nunc. Sed sed aliquam urna. Etiam vel ultrices felis. Ut egestas ipsum sit amet interdum sagittis. Nullam mattis aliquet urna, quis ultricies felis sodales non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed feugiat ut nunc at sollicitudin. Ut felis ex, scelerisque non porttitor at, dapibus eu elit. Mauris ornare eget nibh nec dignissim.
@@ -46,8 +46,8 @@ function Home() {
 
           In interdum mauris nibh, eget tempor turpis auctor auctor. Nunc mollis hendrerit porta. Pellentesque sed nunc eget ante mollis vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum nulla venenatis, rhoncus mi vitae, mollis justo. Maecenas imperdiet, metus nec mollis viverra, nulla turpis scelerisque ex, sed pharetra arcu elit ut erat. Pellentesque ullamcorper maximus lorem quis sagittis. Cras in mi et neque tincidunt mattis. Proin commodo urna ac ex mattis viverra. Aliquam vel finibus eros, in sodales nisl. Cras vitae pharetra ex. Suspendisse eget malesuada erat. Proin tempus nulla id mauris ornare consequat. Curabitur feugiat velit risus, nec ullamcorper elit eleifend et. Proin at orci dolor.
           </p>
-        </div>
-        <div class="" id="contact">
+        </section>
+        <section id="contact">
           <h2>Content</h2>
           <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus metus eros, at eleifend felis vulputate sit amet. Etiam sed quam urna. Sed venenatis, risus quis rhoncus lacinia, turpis elit condimentum est, sit amet cursus est nulla a lectus. Praesent aliquet tincidunt erat, at tempor lectus tempus a. Etiam scelerisque eros a ex suscipit laoreet. Sed et sollicitudin velit, quis dignissim nunc. Sed sed aliquam urna. Etiam vel ultrices felis. Ut egestas ipsum sit amet interdum sagittis. Nullam mattis aliquet urna, quis ultricies felis sodales non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed feugiat ut nunc at sollicitudin. Ut felis ex, scelerisque non porttitor at, dapibus eu elit. Mauris ornare eget nibh nec dignissim.
@@ -60,7 +60,7 @@ function Home() {
 
           In interdum mauris nibh, eget tempor turpis auctor auctor. Nunc mollis hendrerit porta. Pellentesque sed nunc eget ante mollis vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum nulla venenatis, rhoncus mi vitae, mollis justo. Maecenas imperdiet, metus nec mollis viverra, nulla turpis scelerisque ex, sed pharetra arcu elit ut erat. Pellentesque ullamcorper maximus lorem quis sagittis. Cras in mi et neque tincidunt mattis. Proin commodo urna ac ex mattis viverra. Aliquam vel finibus eros, in sodales nisl. Cras vitae pharetra ex. Suspendisse eget malesuada erat. Proin tempus nulla id mauris ornare consequat. Curabitur feugiat velit risus, nec ullamcorper elit eleifend et. Proin at orci dolor.
           </p>
-        </div>
+        </section>
       </main>
     </div>
   );
