@@ -17,7 +17,7 @@ function Header() {
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <div class="social">
+        <div className="social">
           <a href="https://github.com/Nrirvadoth">
             <FontAwesomeIcon icon={faSquareGithub} className="socialIcon" />
           </a>

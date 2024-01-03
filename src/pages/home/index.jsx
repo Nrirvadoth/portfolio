@@ -4,7 +4,7 @@ function Home() {
   return (
     <div className="container">
       <Header />
-      <main class="content fade">
+      <main className="content fade">
         <section id="about">
           <h2>Content</h2>
           <p>
