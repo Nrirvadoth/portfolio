@@ -8,7 +8,7 @@ function Home() {
       <Header />
       <main className="content fade">
         <section id="about">
-          <h2>Mon Parcours</h2>
+          <h2>Parcours</h2>
           <p>
             Autodidacte et autonome, je travaille depuis plus de 10 ans dans le
             domaine digital. J’ai dû m’adapter face aux différents métiers,
@@ -22,7 +22,7 @@ function Home() {
           <SkillList />
         </section>
         <section id="projects">
-          <h2>Content</h2>
+          <h2>Projets</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
             faucibus metus eros, at eleifend felis vulputate sit amet. Etiam sed
@@ -79,7 +79,7 @@ function Home() {
           </p>
         </section>
         <section id="contact">
-          <h2>Content</h2>
+          <h2>Contact</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
             faucibus metus eros, at eleifend felis vulputate sit amet. Etiam sed
