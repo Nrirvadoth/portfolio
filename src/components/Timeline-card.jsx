@@ -8,14 +8,14 @@ import Typography from '@mui/material/Typography';
 function TimelineCard({ date, event, desc, last, pos }) {
   return (
     <TimelineItem>
-      <TimelineSeparator >
-        <TimelineDot color="primary"/>
-        {last === true ? '' : ( <TimelineConnector sx={{ bgcolor: 'primary' }} /> ) }
+      <TimelineSeparator>
+        <TimelineDot color="primary" />
+        {last === true ? '' : <TimelineConnector />}
       </TimelineSeparator>
-      <TimelineContent sx={{ py: '12px', px: 2 }} className={pos} >
+      <TimelineContent sx={{ py: '12px', px: 2 }} className={pos}>
         <Typography color="primary">{date}</Typography>
         <Typography variant="h6" component="span">
-            {event}
+          {event}
         </Typography>
         <Typography>{desc}</Typography>
       </TimelineContent>

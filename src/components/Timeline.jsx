@@ -28,7 +28,7 @@ export default function MyTimeline() {
             date={TimelineElement.date}
             event={TimelineElement.event}
             desc={TimelineElement.desc}
-            pos={index % 2 === 0 ? "TimelineRight" : "TimelineLeft"}
+            pos={index % 2 === 0 ? 'TimelineRight' : 'TimelineLeft'}
             last={index === arr.length - 1 ? true : false}
           />
         ))}
