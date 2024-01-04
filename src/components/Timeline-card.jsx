@@ -5,7 +5,7 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import Typography from '@mui/material/Typography';
 
-function TimelineCard({ date, event, desc, last, pos }) {
+export default function TimelineCard({ date, event, desc, last, pos }) {
   return (
     <TimelineItem>
       <TimelineSeparator>
@@ -22,5 +22,3 @@ function TimelineCard({ date, event, desc, last, pos }) {
     </TimelineItem>
   );
 }
-
-export default TimelineCard;
