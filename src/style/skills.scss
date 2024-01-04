@@ -41,9 +41,13 @@
     animation-fill-mode: forwards;
 }
 
-.skill-bar:hover {
+.skill:hover {
     color: #000;
-    opacity: 0.8 !important;
+    opacity: 0.9 !important;
+
+    .skill-score {
+        color: #61dafb;
+    }
 }
 
 .skill-bar p {
