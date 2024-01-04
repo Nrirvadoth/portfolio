@@ -34,13 +34,13 @@ h6 {
 }
 
 .name {
-    font-size: 60px;
+  font-size: 60px;
 }
 
 .role {
-    font-size: 30px;
-    font-weight: 400;
-    color: #999;
+  font-size: 30px;
+  font-weight: 400;
+  color: #61dafb;
 }
 
 p {
@@ -62,7 +62,7 @@ main {
   background-color: $background-content;
   overflow: auto;
   color: #fff;
-  padding-right:20px;
+  padding-right: 20px;
 }
 
 section {
@@ -74,17 +74,26 @@ section {
   scrollbar-width: none;
 }
 
-::-webkit-scrollbar, ::-webkit-scrollbar-track-piece, ::-webkit-scrollbar-thumb {
-  display:none;
+::-webkit-scrollbar,
+::-webkit-scrollbar-track-piece,
+::-webkit-scrollbar-thumb {
+  display: none;
 }
 
 .fade {
-  mask-image: linear-gradient(180deg, transparent 5%, rgba(0, 0, 0, 1) 15%, rgba(0, 0, 0, 1) 85%, transparent 95%);
+  mask-image: linear-gradient(
+    180deg,
+    transparent 5%,
+    rgba(0, 0, 0, 1) 15%,
+    rgba(0, 0, 0, 1) 85%,
+    transparent 95%
+  );
 }
 
 /* --- Timeline --- */
 
-.TimelineRight, .Timelineleft {
+.TimelineRight,
+.Timelineleft {
   transition: all 0.5s ease-in-out;
 }
 
