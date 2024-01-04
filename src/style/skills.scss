@@ -1,0 +1,58 @@
+.skill {
+    display:flex;
+    width: 100%;
+    line-height: 40px;
+    margin-bottom: 15px;
+}
+
+.skill-name {
+    background: #61dafb;
+    background: #fff;
+    padding: 0 5px;
+    color: #000000;
+    min-width: 80px;
+    max-width: 80px;
+    font-weight:500;
+    opacity:70%;
+    font-family: 'Work Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content:center;
+}
+
+.skill-logo {
+    aspect-ratio: auto;
+    max-width:30px;
+    max-height:30px;
+}
+
+.skill-score {
+    font-family: 'Work Sans', sans-serif;
+    font-weight:500;
+}
+
+.skill-bar {
+    background-color: #fff;
+    background-color: #61dafb;
+    animation: 2s ease-in-out 2s grow;
+    max-width: 0%;
+    transform-origin: left;
+    animation-fill-mode: forwards;
+}
+
+.skill-score {
+    width:50px;
+    margin-left: 15px;
+}
+
+@keyframes grow {
+    0% {
+        transform: scaleX(0);
+        max-width: 0%;
+    }
+    100% {
+        transform: scaleX(1);
+        max-width:100%;
+    }
+}

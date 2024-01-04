@@ -1,0 +1,32 @@
+[
+  {
+    "id": "214595",
+    "name": "React",
+    "logoUrl": "/assets/React-icon.png",
+    "score": "90"
+  },
+  {
+    "id": "214595",
+    "name": "CSS",
+    "logoUrl": "/assets/css-logo.png",
+    "score": "50"
+  },
+  {
+    "id": "214595",
+    "name": "MongoDB",
+    "logoUrl": "/assets/mongo-db-logo.png",
+    "score": "30"
+  },
+  {
+    "id": "214595",
+    "name": "Node.js",
+    "logoUrl": "/assets/node-logo.png",
+    "score": "10"
+  },
+  {
+    "id": "214595",
+    "name": "HTML5",
+    "logoUrl": "/assets/html-logo.png",
+    "score": "70"
+  }
+]

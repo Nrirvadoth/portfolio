@@ -1,6 +1,7 @@
 @use 'stars.scss';
 @use 'header.scss';
 @use 'mui-modifyer.scss';
+@use 'skills.scss';
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap');
 
 /* $background-content: #00000050; */
@@ -31,6 +32,8 @@ h6 {
 
 .content h2 {
   font-size: 38px;
+  margin-bottom:20px;
+  font-weight: 300;
 }
 
 .name {
@@ -67,6 +70,7 @@ main {
 
 section {
   padding-top: 120px;
+  min-height: 100vh;
 }
 
 .content {
