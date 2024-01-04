@@ -9,7 +9,7 @@ function TimelineCard({ date, event, desc, last, pos }) {
   return (
     <TimelineItem>
       <TimelineSeparator>
-        <TimelineDot color="primary" />
+        {last === true ? <TimelineDot variant="outlined" color="primary" /> : <TimelineDot color="primary" />}
         {last === true ? '' : <TimelineConnector />}
       </TimelineSeparator>
       <TimelineContent sx={{ py: '12px', px: 2 }} className={pos}>
