@@ -1,6 +1,6 @@
 @use 'stars.scss';
 @use 'header.scss';
-@use 'mui-modifyer.scss';
+@use 'timeline.scss';
 @use 'skills.scss';
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap');
 
@@ -92,21 +92,4 @@ section {
     rgba(0, 0, 0, 1) 85%,
     transparent 95%
   );
-}
-
-/* --- Timeline --- */
-
-.TimelineRight,
-.TimelineLeft {
-  transition: all 0.5s ease-in-out;
-}
-
-.TimelineRight:hover {
-  transform: translate(20px);
-  transition: all 0.5s ease-in-out;
-}
-
-.TimelineLeft:hover {
-  transform: translate(-20px);
-  transition: all 0.5s ease-in-out;
 }
