@@ -41,6 +41,10 @@
     animation-fill-mode: forwards;
 }
 
+.skill-bar:hover {
+    color: #000;
+}
+
 .skill-bar p {
     padding-left: 20px;
     visibility:hidden;
