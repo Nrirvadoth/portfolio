@@ -41,6 +41,13 @@
     animation-fill-mode: forwards;
 }
 
+.skill-bar p {
+    padding-left: 20px;
+    visibility:hidden;
+    animation: 2s ease-in-out 2s fade;
+    animation-fill-mode: forwards;
+}
+
 .skill-score {
     width:50px;
     margin-left: 15px;
@@ -54,5 +61,11 @@
     100% {
         transform: scaleX(1);
         max-width:100%;
+    }
+}
+
+@keyframes fade {
+    100% {
+        visibility:visible;
     }
 }
