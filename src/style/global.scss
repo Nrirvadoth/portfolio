@@ -79,6 +79,46 @@ section {
   scrollbar-width: none;
 }
 
+form {
+  font-family: 'Work Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 15px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  color: #fff;
+  font-family: 'Work Sans', sans-serif;
+  margin-bottom: 10px;
+}
+
+input:hover, input:focus, input:target, input:active {
+  border-color: #61dafb;
+}
+
+input[type="textarea"] {
+  vertical-align:text-top;
+}
+
+input[type="submit"] {
+  background-color: #61dafb;
+  padding: 15px;
+  text-align:center;
+  font-family: 'Work Sans', sans-serif;
+  border: none;
+  font-size: 16px;
+  color: #000;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
 ::-webkit-scrollbar,
 ::-webkit-scrollbar-track-piece,
 ::-webkit-scrollbar-thumb {
