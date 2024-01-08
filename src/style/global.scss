@@ -94,3 +94,28 @@ section {
     transparent 95%
   );
 }
+
+.error404 {
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-title {
+  font-size: 180px;
+}
+
+.error-text {
+  color: #fff;
+}
+
+.error-link {
+  font-family: 'Work Sans', sans-serif;
+  color: #fff;
+}
+
+.error-link:hover {
+  color: #61dafb;
+}
