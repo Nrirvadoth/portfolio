@@ -12,7 +12,7 @@ function ContactForm() {
       <label for="object">Objet :</label>
       <input type="text" name="object" placeholder="Objet" required/>
       <label for="content">Votre message :</label>
-      <input type="textarea" name="content" placeholder="Message" required/>
+      <textarea name="content" rows="5" placeholder="Message" required/>
       <input type="submit" value="Send" />
     </form>
   );
