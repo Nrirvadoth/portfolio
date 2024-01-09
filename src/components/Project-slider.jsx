@@ -52,7 +52,7 @@ function Projects() {
       <div id="project-card">
         <img
           className="project-thumbnail"
-          src="https://placehold.co/1200x600"
+          src={currentProject.thumbnail}
           alt=""
         />
         <h3 className="project-title">{currentProject.title}</h3>
