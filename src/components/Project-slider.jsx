@@ -1,7 +1,10 @@
 import { useState } from 'react';
 import leftArrow from '../assets/left-arrow.svg';
 import rightArrow from '../assets/right-arrow.svg';
-import data from '../data/projects.json';
+import myApi from './config.js'
+
+const dataJson = await fetch(`${myApi}/projects`);
+const data = await dataJson.json();
 
 function Projects() {
   const [currentIndex, setIndex] = useState(0);

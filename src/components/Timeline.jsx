@@ -2,7 +2,10 @@ import * as React from 'react';
 import Timeline from '@mui/lab/Timeline';
 import TimelineCard from './Timeline-card';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import data from '../data/timeline-data.json';
+import myApi from './config.js'
+
+const dataJson = await fetch(`${myApi}/events`);
+const data = await dataJson.json();
 
 const theme = createTheme({
   typography: {

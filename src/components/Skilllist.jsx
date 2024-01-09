@@ -1,5 +1,8 @@
 import Skill from './Skill';
-import data from '../data/skills.json';
+import myApi from './config.js'
+
+const dataJson = await fetch(`${myApi}/skills`);
+let data = await dataJson.json();
 
 data = data.sort((a, b) => {
     return b.score - a.score
