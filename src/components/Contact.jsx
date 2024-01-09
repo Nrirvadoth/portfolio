@@ -25,7 +25,7 @@ function ContactForm() {
         .then((response) => response.json())
         .then((response) => {
           if (response.status === 'success') {
-            alert('Message Sent.');
+            alert('Message envoyé.');
             resetForm();
           } else if (response.status === 'fail') {
             alert('Message failed to send.');
