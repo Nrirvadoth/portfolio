@@ -27,7 +27,7 @@ export default function MyTimeline() {
       <Timeline position="alternate">
         {data.map((TimelineElement, index, arr) => (
           <TimelineCard
-            key={TimelineElement.id}
+            key={TimelineElement._id}
             date={TimelineElement.date}
             event={TimelineElement.event}
             desc={TimelineElement.desc}

@@ -13,7 +13,7 @@ export default function SkillList() {
     <div className="skill-list">
       {data.map((skill) => (
         <Skill
-          key={`skill-${skill.id}`}
+          key={`skill-${skill._id}`}
           name={skill.name}
           logo={skill.logoUrl}
           score={skill.score}

@@ -61,7 +61,7 @@ function Projects() {
         <h3 className="project-title">{currentProject.title}</h3>
         <ul className="tag-list">
           {currentProject.tags.map((tag) => (
-            <li className="tags" key={`${currentProject.id}-${tag}`}>
+            <li className="tags" key={`${currentProject._id}-${tag}`}>
               {tag}
             </li>
           ))}
