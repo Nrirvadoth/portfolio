@@ -1,19 +1,90 @@
+import { useState } from 'react';
+
 function ContactForm() {
+  const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
+  const [object, setObject] = useState('');
+  const [content, setContent] = useState('');
+
+  function send(e) {
+    e.preventDefault();
+    if (email && name && object && content) {
+      fetch('/send', {
+        method: 'POST',
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          object: object,
+          content: content,
+        }),
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+      })
+        .then((response) => response.json())
+        .then((response) => {
+          if (response.status === 'success') {
+            alert('Message Sent.');
+            resetForm();
+          } else if (response.status === 'fail') {
+            alert('Message failed to send.');
+          }
+        });
+    }
+  }
+
+  function resetForm() {
+    setName('');
+    setEmail('');
+    setObject('');
+    setContent('');
+  }
+
   return (
-    <form
-      action="mailto:mathurin.malandain@gmail.com"
-      method="post"
-      enctype="text/plain"
-    >
-      <label for="name">Votre nom :</label>
-      <input type="text" name="name" placeholder="Votre nom" required/>
-      <label for="name">Votre email :</label>
-      <input type="email" name="email" placeholder="Votre email" required/>
-      <label for="object">Objet :</label>
-      <input type="text" name="object" placeholder="Objet" required/>
-      <label for="content">Votre message :</label>
-      <textarea name="content" rows="5" placeholder="Message" required/>
-      <input type="submit" value="Send" />
+    <form>
+      <label htmlFor="name">Votre nom :</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Votre nom"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+        required
+      />
+      <label htmlFor="email">Votre email :</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Votre email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        required
+      />
+      <label htmlFor="object">Objet :</label>
+      <input
+        type="text"
+        id="object"
+        name="object"
+        placeholder="Objet"
+        value={object}
+        onChange={(e) => setObject(e.target.value)}
+        required
+      />
+      <label htmlFor="content">Votre message :</label>
+      <textarea
+        name="content"
+        id="content"
+        rows="5"
+        placeholder="Message"
+        value={content}
+        onChange={(e) => setContent(e.target.value)}
+        required
+      />
+      <input type="submit" value="Send" onClick={(e) => send(e)} />
+      <div id="result"></div>
     </form>
   );
 }
