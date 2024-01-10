@@ -84,11 +84,23 @@ section {
   scrollbar-width: none;
 }
 
+.button {
+  background-color:#61dafb;
+  color:#000;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
 form {
   font-family: 'Work Sans', sans-serif;
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+label {
+  color: #fff;
 }
 
 input, textarea {
@@ -140,7 +152,7 @@ input[type="submit"]:hover {
   );
 }
 
-.error404 {
+.error404, .adminpage {
   height:100vh;
   display: flex;
   flex-direction: column;

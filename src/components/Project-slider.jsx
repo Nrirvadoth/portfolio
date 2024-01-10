@@ -67,7 +67,7 @@ function Projects() {
           ))}
         </ul>
         <p className="project-desc">{currentProject.description}</p>
-        {currentProject.link && <a href={currentProject.link} className="project-button">Voir en ligne</a>}
+        {currentProject.link && <a href={currentProject.link} className="button">Voir en ligne</a>}
       </div>
     </div>
   );
