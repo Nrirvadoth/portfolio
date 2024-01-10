@@ -21,6 +21,7 @@ export default function Connexion() {
       .then((response) => {
         if (response.status === "success" ) {
           localStorage.setItem('userToken', response.token);
+          window.location.reload();
         } else {
           alert('Erreur');
         }
