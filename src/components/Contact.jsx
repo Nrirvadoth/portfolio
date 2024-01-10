@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import myApi from './config';
 
 function ContactForm() {
   const [email, setEmail] = useState('');
@@ -9,7 +10,7 @@ function ContactForm() {
   function send(e) {
     e.preventDefault();
     if (email && name && object && content) {
-      fetch('/send', {
+      fetch(`${myApi}/messages/add`, {
         method: 'POST',
         body: JSON.stringify({
           name: name,
@@ -18,7 +19,6 @@ function ContactForm() {
           content: content,
         }),
         headers: {
-          Accept: 'application/json',
           'Content-Type': 'application/json',
         },
       })
@@ -27,7 +27,7 @@ function ContactForm() {
           if (response.status === 'success') {
             alert('Message envoyé.');
             resetForm();
-          } else if (response.status === 'fail') {
+          } else {
             alert('Message failed to send.');
           }
         });
