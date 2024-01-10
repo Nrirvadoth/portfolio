@@ -83,7 +83,7 @@ function ContactForm() {
         onChange={(e) => setContent(e.target.value)}
         required
       />
-      <input type="submit" value="Send" onClick={(e) => send(e)} />
+      <input type="submit" value="Envoyer" onClick={(e) => send(e)} />
       <div id="result"></div>
     </form>
   );
