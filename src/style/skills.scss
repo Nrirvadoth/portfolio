@@ -78,3 +78,10 @@
         visibility:visible;
     }
 }
+
+@media only screen and (max-device-width: 768px) {
+    .skill-name {
+        max-width:50px;
+        min-width:50px;
+    }
+}
