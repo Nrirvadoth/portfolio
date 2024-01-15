@@ -151,7 +151,9 @@ function Admin() {
               <p>
                 De : {messages[messageIndex].name} | {messages[messageIndex].email}
               </p>
+              <div className="divider"/>
               <p>{messages[messageIndex].content} </p>
+              <div className="divider"/>
               <div className="nav-prev" onClick={() => setType('')}>
                 <img
                   src={leftArrow}
