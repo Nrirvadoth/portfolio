@@ -54,17 +54,17 @@ function Admin() {
               <FontAwesomeIcon
                 icon={faUser}
                 className="icon"
-                onClick={() => setType('Events')}
+                onClick={() => setType('events')}
               />
               <FontAwesomeIcon
                 icon={faSquareCheck}
                 className="icon"
-                onClick={() => setType('Skills')}
+                onClick={() => setType('skills')}
               />
               <FontAwesomeIcon
                 icon={faFolderOpen}
                 className="icon"
-                onClick={() => setType('Projects')}
+                onClick={() => setType('projects')}
               />
               <FontAwesomeIcon
                 icon={faEnvelope}
@@ -73,9 +73,9 @@ function Admin() {
               />
             </div>
           )}
-          {type === 'Events' && (
+          {type === 'events' && (
             <div className="admin-form">
-              <AdminForm type='Events' />
+              <AdminForm type='events' />
               <div className="nav-prev" onClick={() => setType('')}>
                 <img
                   src={leftArrow}
@@ -87,9 +87,9 @@ function Admin() {
               </div>
             </div>
           )}
-          {type === 'Skills' && (
+          {type === 'skills' && (
             <div className="admin-form">
-              <AdminForm type='Skills' />
+              <AdminForm type='skills' />
               <div className="nav-prev" onClick={() => setType('')}>
                 <img
                   src={leftArrow}
@@ -101,9 +101,9 @@ function Admin() {
               </div>
             </div>
           )}
-          {type === 'Projects' && (
+          {type === 'projects' && (
             <div className="admin-form">
-              <AdminForm type='Projects' />
+              <AdminForm type='projects' />
               <div className="nav-prev" onClick={() => setType('')}>
                 <img
                   src={leftArrow}
