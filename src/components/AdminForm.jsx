@@ -112,7 +112,7 @@ export default function AdminForm({ type }) {
         <input
           type="text"
           id="score"
-          placeholder="Score"
+          placeholder="Score (entre 1 et 100)"
           name="score"
           value={score}
           onChange={(e) => setScore(e.target.value)}
