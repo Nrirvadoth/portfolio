@@ -68,7 +68,7 @@ main {
   width: 100%;
   overflow: auto;
   color: #fff;
-  overflow: hidden;
+  overflow-y: scroll;
 }
 
 section {
@@ -188,6 +188,8 @@ input[type="submit"]:hover {
   display: flex;
   flex-direction:column;
   gap:15px;
+  width: 500px;
+  max-width:90vw;
 }
 
 .icon {
@@ -199,6 +201,11 @@ input[type="submit"]:hover {
 .icon:hover {
   color: #61dafb;
   cursor:pointer;
+}
+
+.divider {
+  margin: 15px 0;
+  border-bottom: #fff 1px solid;
 }
 
 @media only screen and (max-device-width : 768px) {
