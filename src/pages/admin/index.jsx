@@ -1,4 +1,5 @@
 import Connexion from '../../components/Connexion';
+import AdminForm from '../../components/AdminForm';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faUser,
@@ -11,17 +12,22 @@ import rightArrow from '../../assets/right-arrow.svg';
 import { useState } from 'react';
 import myApi from '../../components/config';
 
-const messagesJson = await fetch(`${myApi}/messages`, {
-  headers: {
-    Authorization: `Bearer ${localStorage.getItem('userToken')}`,
-  },
-});
-const messages = await messagesJson.json();
 
 function Admin() {
   const [type, setType] = useState('');
   const [messageIndex, setMessageIndex] = useState(0);
-  const currentMessage = messages[messageIndex];
+  const [messages, setMessages] = useState('');
+
+  async function getMessages() {
+    const messagesJson = await fetch(`${myApi}/messages`, {
+      headers: {
+        Authorization: `Bearer ${localStorage.getItem('userToken')}`,
+      },
+    });
+    const messagesList = await messagesJson.json();
+    setMessages(messagesList);
+    setType('messages');
+  }
 
   function next() {
     setMessageIndex(messageIndex + 1);
@@ -48,28 +54,28 @@ function Admin() {
               <FontAwesomeIcon
                 icon={faUser}
                 className="icon"
-                onClick={() => setType('events')}
+                onClick={() => setType('Events')}
               />
               <FontAwesomeIcon
                 icon={faSquareCheck}
                 className="icon"
-                onClick={() => setType('skills')}
+                onClick={() => setType('Skills')}
               />
               <FontAwesomeIcon
                 icon={faFolderOpen}
                 className="icon"
-                onClick={() => setType('projects')}
+                onClick={() => setType('Projects')}
               />
               <FontAwesomeIcon
                 icon={faEnvelope}
                 className="icon"
-                onClick={() => setType('messages')}
+                onClick={() => getMessages()}
               />
             </div>
           )}
-          {type === 'events' && (
+          {type === 'Events' && (
             <div className="admin-form">
-              <p>Events</p>
+              <AdminForm type='Events' />
               <div className="nav-prev" onClick={() => setType('')}>
                 <img
                   src={leftArrow}
@@ -81,9 +87,9 @@ function Admin() {
               </div>
             </div>
           )}
-          {type === 'skills' && (
+          {type === 'Skills' && (
             <div className="admin-form">
-              <p>Skills</p>
+              <AdminForm type='Skills' />
               <div className="nav-prev" onClick={() => setType('')}>
                 <img
                   src={leftArrow}
@@ -95,9 +101,9 @@ function Admin() {
               </div>
             </div>
           )}
-          {type === 'projects' && (
+          {type === 'Projects' && (
             <div className="admin-form">
-              <p>Projects</p>
+              <AdminForm type='Projects' />
               <div className="nav-prev" onClick={() => setType('')}>
                 <img
                   src={leftArrow}
@@ -140,12 +146,12 @@ function Admin() {
                 )}
               </div>
               <p>Messages</p>
-              <h3>{currentMessage.object}</h3>
-              <p>Date : {currentMessage.date} </p>
+              <h3>{messages[messageIndex].object}</h3>
+              <p>Date : {messages[messageIndex].date} </p>
               <p>
-                De : {currentMessage.name} | {currentMessage.email}
+                De : {messages[messageIndex].name} | {messages[messageIndex].email}
               </p>
-              <p>{currentMessage.content} </p>
+              <p>{messages[messageIndex].content} </p>
               <div className="nav-prev" onClick={() => setType('')}>
                 <img
                   src={leftArrow}
