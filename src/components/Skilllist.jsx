@@ -15,7 +15,7 @@ export default function SkillList() {
         <Skill
           key={`skill-${skill._id}`}
           name={skill.name}
-          logo={skill.logoUrl}
+          image={skill.image}
           score={skill.score}
         />
       ))}

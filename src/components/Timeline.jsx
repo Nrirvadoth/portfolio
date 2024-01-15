@@ -29,8 +29,8 @@ export default function MyTimeline() {
           <TimelineCard
             key={TimelineElement._id}
             date={TimelineElement.date}
-            event={TimelineElement.event}
-            desc={TimelineElement.desc}
+            name={TimelineElement.name}
+            description={TimelineElement.description}
             pos={index % 2 === 0 ? 'TimelineRight' : 'TimelineLeft'}
             last={index === arr.length - 1 ? true : false}
           />

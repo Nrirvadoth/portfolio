@@ -41,12 +41,12 @@ function Projects() {
             <div className="nav-prev" onClick={prev}>
                 <img src={leftArrow} alt="" className="left-arrow" height="40" />
                 <p>
-                    {data[currentIndex-1] ? `${data[currentIndex-1].title}` : `${data[length-1].title}`}
+                    {data[currentIndex-1] ? `${data[currentIndex-1].name}` : `${data[length-1].name}`}
                 </p>
             </div>
             <div className="nav-next" onClick={next}>
                 <p>
-                    {data[currentIndex+1] ? `${data[currentIndex+1].title}` : `${data[0].title}`}
+                    {data[currentIndex+1] ? `${data[currentIndex+1].name}` : `${data[0].name}`}
                 </p>
                 <img src={rightArrow} alt="" className="right-arrow" height="40" />
             </div>
@@ -55,10 +55,10 @@ function Projects() {
       <div id="project-card">
         <img
           className="project-thumbnail"
-          src={currentProject.thumbnail}
+          src={currentProject.image}
           alt=""
         />
-        <h3 className="project-title">{currentProject.title}</h3>
+        <h3 className="project-title">{currentProject.name}</h3>
         <ul className="tag-list">
           {currentProject.tags.map((tag) => (
             <li className="tags" key={`${currentProject._id}-${tag}`}>

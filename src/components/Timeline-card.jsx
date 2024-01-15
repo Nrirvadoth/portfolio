@@ -5,7 +5,7 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import Typography from '@mui/material/Typography';
 
-export default function TimelineCard({ date, event, desc, last, pos }) {
+export default function TimelineCard({ date, name, description, last, pos }) {
   return (
     <TimelineItem>
       <TimelineSeparator>
@@ -15,9 +15,9 @@ export default function TimelineCard({ date, event, desc, last, pos }) {
       <TimelineContent sx={{ py: '12px', px: 2 }} className={pos}>
         <Typography color="primary">{date}</Typography>
         <Typography variant="h6" component="span">
-          {event}
+          {name}
         </Typography>
-        <Typography>{desc}</Typography>
+        <Typography>{description}</Typography>
       </TimelineContent>
     </TimelineItem>
   );
