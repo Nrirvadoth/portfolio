@@ -49,7 +49,7 @@ export default function AdminForm({ type }) {
     }
 
     try {
-      await fetch(`${myApi}/${type}/add`, fetchRequest)
+      await fetch(`${myApi}/${type}`, fetchRequest)
       resetForm();
     } catch(error) {
       console.error(error)
