@@ -2,7 +2,7 @@
   "name": "p8-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nrirvadoth.github.io/portofolio",
+  "homepage": "https://nrirvadoth.github.io/portfolio",
   "dependencies": {
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
