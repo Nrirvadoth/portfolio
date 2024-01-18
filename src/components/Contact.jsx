@@ -10,7 +10,7 @@ function ContactForm() {
   function send(e) {
     e.preventDefault();
     if (email && name && object && content) {
-      fetch(`${myApi}/messages/add`, {
+      fetch(`${myApi}/messages`, {
         method: 'POST',
         body: JSON.stringify({
           name: name,
