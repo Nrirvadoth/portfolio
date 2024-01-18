@@ -6,11 +6,11 @@ import '../style/global.scss';
 
 function Router() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio">
       <Routes>
-        <Route path="https://nrirvadoth.github.io/portfolio/" element={<Home />} />
-        <Route path="https://nrirvadoth.github.io/portfolio/admin" element={<Admin />} />
-        <Route path="https://nrirvadoth.github.io/portfolio/*" element={<Error404 />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/admin" element={<Admin />} />
+        <Route path="*" element={<Error404 />} />
       </Routes>
     </BrowserRouter>
   );
